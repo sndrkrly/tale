@@ -1,12 +1,12 @@
-<h1 align="center">
+<h1 align="left">
 	🌀 <b>tale</b>
 </h1>
 
-<p align="center">
+<p align="left">
 	Egy új közösségi háló, ahol megvásárolhatod álmaid cipőjét, biztonságosabban és gyorsabban!
 </p>
 
-<h1 align="center">
+<h1 align="left">
 	✨ Struktúra
 </h1>
 
@@ -15,11 +15,11 @@
 | [kibbeh](kibbeh)     |   Next.js (Frontend)  |
 | [scripts](scripts)   |   TypeORM (Backend)   |
 
-<h1 align="center">
+<h1 align="left">
 	📋 Dokumentáció
 </h1>
 
-<p align="center">
+<p align="left">
 	Az emberek feltehetnek cipőket. <br><br>
 	Mindenkinek lenne egy profilja ahol látszódnak a sikeres üzletek száma <br>
 	és, hogy mennyi ember adott neki csillagot, azaz mennyien bíznak megbenne. <br><br>
@@ -30,11 +30,11 @@
 	belül <br> mindig ellenőrizni és ha jogosnak tartják, akkor a fentebb említett dolog történne.
 </p>
 
-<h1 align="center">
+<h1 align="left">
 	🔖 Jogi információk
 </h1>
 
-<p align="center">
+<p align="left">
   	Minden itt látható dolog, OMEGA Magyarország Kft. tulajdona. <br>
 	Bármi részlet, legyen az kód vagy kép, eltulajdonítása jogi
 	következményeket von maga után.
