@@ -1,0 +1,24 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "postgres",
+   "password": "root",
+   "database": "tale",
+   "synchronize": false,
+   "logging": true,
+   "entities": [
+      "scripts/entities/**/*.ts"
+   ],
+   "migrations": [
+      "scripts/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "scripts/subscribers/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "scripts/entities",
+      "migrationsDir": "scripts/migration",
+      "subscribersDir": "scripts/subscribers"
+   }
+}
