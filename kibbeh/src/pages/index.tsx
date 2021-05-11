@@ -1,10 +1,23 @@
 /*
-    Created by Sándor Király on 30/04/21.
+    Created by Sándor Király on 01/05/21.
 
     Copyright (c) OMEGA Magyarország Kft.
     All rights reserved.
 */
 
-import { Landing } from '../modules/landing/Landing'; 
+import Layout from '../modules/layout/MainLayout';
 
-export default Landing;
+import { HeaderController } from '../modules/display/HeaderController';
+import { FeedController } from '../modules/feed/FeedController';
+
+export default function Home() {
+    return (
+        <>
+            <HeaderController embed = {{}} />
+            
+            <Layout>
+                <FeedController />
+            </Layout>
+        </>
+    );
+};
