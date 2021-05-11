@@ -12,8 +12,9 @@
 
 | Kódbázis             |        Leírás         |
 | :------------------- | :-------------------: |
-| [kibbeh](kibbeh)     |   Next.js (Frontend)  |
 | [scripts](scripts)   |   TypeORM (Backend)   |
+| [kibbeh](kibbeh)     |   Next.js (Frontend)  |
+| [baklava](baklava)   |   Electron Desktop    |
 
 <h1 align="left">
 	📋 Dokumentáció

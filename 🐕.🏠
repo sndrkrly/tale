@@ -1,1 +1,5 @@
 🐕🏠🚀🌕🚩✨
+
+npm run typeorm schema:drop
+npm run typeorm migration:generate -- --name create-users-table
+npm run typeorm migration:run
