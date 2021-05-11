@@ -1,3 +1,3 @@
 <h1 align="left">
-	🏠 Electron Wrapper (Desktop Version)
+	🏠 React Native App (Mobile Version)
 </h1>
