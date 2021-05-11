@@ -13,17 +13,19 @@ import Post from '../entities/Post';
 import Sub from '../entities/Sub';
 
 const createPost = async (req: Request, res: Response) => {
-    const { title, body, sub } = req.body;
+    const { name, description, price, place, status, isPinned, sub } = req.body;
     const user = res.locals.user;
     
-    if (title.trim() === '') {
-        return res.status(400).json({ tilte: 'A cím nem lehet üres!' });
-    };
+    if (name.trim() === '') return res.status(400).json({ title: 'A cím nem lehet üres!' });
+    if (description.trim() === '') return res.status(400).json({ title: 'A leírás nem lehet üres!' });
+    if (price.trim() === '') return res.status(400).json({ title: 'Az ár nem lehet üres!' });
+    if (place.trim() === '') return res.status(400).json({ title: 'Az hely nem lehet üres!' });
+    if (sub.trim() === '') return res.status(400).json({ title: 'A típus nem lehet üres!' });
 
     try {
         const subRecord =  await Sub.findOneOrFail({ name: sub });
 
-        const post = new Post({ title, body, user, sub: subRecord });
+        const post = new Post({ name, description, price, place, status, isPinned, user, sub: subRecord });
         await post.save();
 
         return res.json(post);

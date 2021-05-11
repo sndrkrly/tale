@@ -11,18 +11,23 @@ import {
     Index, 
     BeforeInsert,
     ManyToOne,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 
 import { makeID, slugify } from '../utils/helpers';
+import { Expose } from 'class-transformer';
 
 import Entity from './Entity'; 
-
 import User from './User';
 import Sub from './Sub';
 
 @TOEntity('posts')
 export default class Post extends Entity {
+    /*
+    @Column({ nullable: true, type: 'text' })
+    body: string
+    */
+
     constructor(post: Partial<Post>) {
         super();
         Object.assign(this, post);
@@ -30,32 +35,51 @@ export default class Post extends Entity {
 
     @Index()
     @Column()
-    identifier: string /* 7 Character ID */
+    identifier: string
 
     @Column()
-    title: string 
+    name: string
+
+    @Column()
+    description: string
+
+    @Column()
+    price: string
+
+    @Column()
+    place: string
 
     @Index()
     @Column()
     slug: string
 
-    @Column({ nullable: true, type: 'text' })
-    body: string
+    @Column()
+    status: string
+
+    @Column()
+    isPinned: string
 
     @Column()
     subName: string
 
+    @Column()
+    username: string
+
     @ManyToOne(() => User, (user) => user.posts)
-    @JoinColumn({ name: 'email', referencedColumnName: 'email' })
+    @JoinColumn({ name: 'username', referencedColumnName: 'username' })
     user: User
 
     @ManyToOne(() => Sub, (sub) => sub.posts)
     @JoinColumn({ name: 'subName', referencedColumnName: 'name' })
     sub: Sub
 
+    @Expose() get url(): string {
+        return `/${this.subName}/${this.identifier}`;
+    };
+
     @BeforeInsert()
     makeIDandSlug() {
         this.identifier = makeID(7);
-        this.slug = slugify(this.title);
+        this.slug = slugify(this.name);
     };
 };

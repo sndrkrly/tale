@@ -15,12 +15,15 @@ import jwt from 'jsonwebtoken';
 import cookie from 'cookie';
 import bcrypt from 'bcrypt';
 
-/*
-    Register User
-*/
+const mapErrors = (errors: Object[]) => {
+    return errors.reduce((prev: any, err: any) => {
+        prev[err.property] = Object.entries(err.constraints)[0][1];
+        return prev
+    }, {});
+};
 
 const register = async (req: Request, res: Response) => {
-    const { email, username, password } = req.body;
+    const { email, firstName, lastName, password } = req.body;
 
     try {
         let errors: any = {};
@@ -33,12 +36,12 @@ const register = async (req: Request, res: Response) => {
         if (Object.keys(errors).length > 0) {
             return res.status(400).json(errors);
         }
-
-        const user = new User({ email, username, password });
+        
+        const user = new User({ email, firstName, lastName, password });
         
         errors = await validate(user);
         if (errors.length > 0) {
-            return res.status(400).json({ errors });
+           return res.status(400).json(mapErrors(errors));
         };
 
         await user.save();
@@ -48,10 +51,6 @@ const register = async (req: Request, res: Response) => {
         return res.status(500).json(err);
     }
 };
-
-/*
-    Login User
-*/
 
 const login = async (req: Request, res: Response) => {
     const { email, password } = req.body;
@@ -92,17 +91,9 @@ const login = async (req: Request, res: Response) => {
     };
 };
 
-/*
-    Profile (User)
-*/
-
 const profile = (_: Request, res: Response) => {
     return res.json(res.locals.user);
 };
-
-/*
-    LogOut (the User)
-*/
 
 const logout = (_: Request, res: Response) => {
     res.set('Set-Cookie', cookie.serialize('token', '', {
@@ -115,10 +106,6 @@ const logout = (_: Request, res: Response) => {
 
     return res.status(200).json({ success: true });
 };
-
-/*
-    Routers
-*/
 
 const router = Router();
 

@@ -11,6 +11,7 @@ import 'reflect-metadata';
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import morgan from 'morgan';
+import cors from 'cors';
 
 import dotenv from 'dotenv';
 dotenv.config();
@@ -25,9 +26,16 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
+app.use(cookieParser());
 app.use(morgan('dev'));
 app.use(trim);
-app.use(cookieParser());
+app.use(
+    cors({ 
+        credentials: true,
+        origin: process.env.ORIGIN,
+        optionsSuccessStatus: 200,
+    })
+);
 
 app.get('/', (_, res) => res.send('Hello World!'));
 

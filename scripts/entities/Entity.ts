@@ -9,7 +9,7 @@ import {
     PrimaryGeneratedColumn,
     BaseEntity,
     CreateDateColumn, 
-    UpdateDateColumn, 
+    UpdateDateColumn,
 } from 'typeorm';
 
 import { classToPlain, Exclude } from 'class-transformer';
@@ -17,13 +17,19 @@ import { classToPlain, Exclude } from 'class-transformer';
 export default abstract class Entity extends BaseEntity {
     @Exclude()
     @PrimaryGeneratedColumn()
-    id: number;
+    id!: number;
 
-    @CreateDateColumn()
-    createdAt: Date
+    @CreateDateColumn({
+        type: 'timestamp with time zone',
+        nullable: false,
+    })
+    createdAt: Date;
 
-    @UpdateDateColumn()
-    updatedAt: Date
+    @UpdateDateColumn({
+        type: 'timestamp with time zone',
+        nullable: false,
+    })
+    updatedAt: Date;
 
     toJSON() {
         return classToPlain(this);
