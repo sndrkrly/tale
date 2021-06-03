@@ -41,7 +41,7 @@ export const Login = () => {
         <>
             <HeaderController embed = {{}} title = 'Bejelentkezés' />
             
-            <main className = 'flex grid w-full h-full'>
+            <main className = 'bg-white dark:bg-coolGray-900 flex grid w-full h-full'>
                 <div className = 'flex items-center justify-center min-w-screen min-h-screen'>
                     <div className = 'flex m-auto flex-col p-6 gap-5 sm:rounded-8 z-10 sm:w-400 w-400'>
                         <div className = 'flex gap-2 flex-col text-center'>

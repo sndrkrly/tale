@@ -14,7 +14,7 @@ import { Toggle } from '../../../helpers/ThemeToggle';
 const MainHeader = () => {
     return (
         <>
-            <nav className = 'sticky top-0 z-30 bg-white dark:bg-coolGray-900 transition duration-200 ease-in-out border-b border-gray-100 dark:border-coolGray-800'>
+            <nav className = 'sticky top-0 z-30 backdrop-filter backdrop-blur-lg bg-opacity-70 bg-white dark:bg-opacity-30 dark:bg-coolGray-900 transition duration-200 ease-in-out border-b border-gray-100 dark:border-coolGray-800'>
                 <div className = 'w-full mx-auto px-2 px-6'>
                     <div className = 'relative flex items-center justify-between h-16'>
                         <div className = 'px-6 flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>

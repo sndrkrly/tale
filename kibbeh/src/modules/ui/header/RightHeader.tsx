@@ -33,7 +33,7 @@ const RightHeader = () => {
                     <div className = 'flex-shrink-0 flex items-center'>
                         <div className = 'flex flex-col w-6l h-6l bg-gray-100 dark:bg-coolGray-800 rounded-8'>  
                             <div className = 'flex-grow overflow-y-auto'>
-                                <div className = 'fixed w-55l ml-1 px-4 lg:py-3 bg-gray-100 dark:bg-coolGray-800 rounded-8'>
+                                <div className = 'fixed backdrop-filter backdrop-blur-lg bg-opacity-70 dark:bg-opacity-80 w-55l ml-1 px-4 lg:py-3 bg-gray-100 dark:bg-coolGray-800 rounded-8'>
                                     <h1 className = 'text-lg font-semibold text-black dark:text-white'>
                                         Kitűzött hírdetések
                                     </h1>
@@ -51,7 +51,7 @@ const RightHeader = () => {
                                                             <div className = 'flex-shrink-0 flex items-center'>
                                                                 <Link href = {`/u/${post.username.slice(post.username.indexOf('@'), post.username.length).replace('@', '')}`}>
                                                                     <a>
-                                                                        <img src = 'https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/132516912_2266186343525358_9013845069878408599_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=174925&_nc_ohc=BvXmJ2qY4kcAX8YYLer&_nc_ht=scontent-vie1-1.xx&oh=a559375b2f8917ebd60fee92833c4f38&oe=60BFEF99' className = 'w-6 h-6 mr-2 rounded-40 transition duration-200 ease-in-out hover:opacity-80' />
+                                                                        <img src = 'https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e5/e56a7f70064f2e875bc39011acab978dfccc7764_full.jpg' className = 'w-6 h-6 mr-2 rounded-40 transition duration-200 ease-in-out hover:opacity-80' />
                                                                     </a>
                                                                 </Link>
                                                                 
@@ -63,7 +63,7 @@ const RightHeader = () => {
                                                                     </Link>
 
                                                                     <p className = 'text-gray-700 dark:text-coolGray-400 font-normal text-xs'>
-                                                                        {post.place}
+                                                                    {dayjs(post.createdAt).fromNow()}, {post.place}
                                                                     </p>
                                                                 </h1>
                                                             </div>
@@ -82,7 +82,7 @@ const RightHeader = () => {
                                                                 </p>
 
                                                                 <p className = 'text-black dark:text-white font-normal text-sm'>
-                                                                    {post.price} forint
+                                                                    {post.price} Ft
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -104,9 +104,10 @@ const RightHeader = () => {
                                 Névjegy · Fejlesztők
                             </p>
 
-                            <p className = 'py-1 text-gray-500 dark:text-gray-400 font-normal text-xs'>
-                                OMEGA Magyarország Kft. © 2021
-                            </p>
+                            <div className = 'py-1 text-gray-500 dark:text-gray-400 font-normal text-xs'>
+                                <p>OMEGA Magyarország Kft. © 2021.</p>
+                                <p>Minden jog fenntartva.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,8 +117,13 @@ const RightHeader = () => {
 };
 
 /*
-<div className = 'lg:py-3 lg:px-2'>
-    <img className = 'rounded-40 w-8 w-8 mr-2' src = '/favicon.ico' />
+
+Erről egy szót se, jó? ><
+~ Sanyi
+
+<div className = 'space-y-2 py-1 text-gray-500 dark:text-gray-400 font-normal text-xs'>
+    <p>OMEGA Magyarország Kft. © 2021.</p>
+    <p>Minden jog fenntartva.</p>
 </div>
 */
 

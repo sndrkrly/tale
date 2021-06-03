@@ -16,12 +16,12 @@ export default function Custom404() {
             </Head>
 
             <main className = 'flex grid w-full h-full'>
-                <div className = 'flex items-center justify-center min-w-screen min-h-screen bg-primary-900'>
-                    <h1 className = 'font-extrabold text-primary-100 sm:text-5xl'>
+                <div className = 'flex items-center justify-center min-w-screen min-h-screen bg-white dark:bg-coolGray-900'>
+                    <h1 className = 'font-extrabold text-black dark:text-white sm:text-5xl'>
                         404
                     </h1>
 
-                    <p className = 'font-normal text-primary-100 sm:text-3xl ml-5'>
+                    <p className = 'font-normal text-black dark:text-white sm:text-3xl ml-5'>
                         Az oldal nem található.
                     </p>
                 </div>
