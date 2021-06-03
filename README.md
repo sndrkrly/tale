@@ -1,5 +1,5 @@
 <h1 align="left">
-	🌀 <b>tale</b>
+	🎉 <b>tale</b>
 </h1>
 
 <p align="left">
