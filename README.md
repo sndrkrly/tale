@@ -14,7 +14,6 @@
 | :------------------- | :-------------------: |
 | [scripts](scripts)   |   TypeORM (Backend)   |
 | [kibbeh](kibbeh)     |   Next.js (Frontend)  |
-| [pilaf](pilaf)       |   React Native App    |
 | [baklava](baklava)   |   Electron Desktop    |
 
 <h1 align="left">
@@ -22,7 +21,7 @@
 </h1>
 
 <p align="left">
-	Az emberek feltehetnek használt cipőket/ruhákat. <br><br>
+	Az emberek feltehetnek cipőket. <br><br>
 	Mindenkinek lenne egy profilja ahol látszódnak a sikeres üzletek száma <br>
 	és, hogy mennyi ember adott neki csillagot, azaz mennyien bíznak megbenne. <br><br>
 	Aki több csillagot (tisztelet, megbizhatóság jele az oldalon) kapott az <br> kapna
