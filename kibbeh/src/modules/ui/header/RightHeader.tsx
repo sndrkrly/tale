@@ -28,12 +28,12 @@ const RightHeader = () => {
 
     return (
         <>
-            <main className = 'fixed top-5 left-850'>
+            <main className = 'fixed top-5 right-6.5'>
                 <div className = 'float-right lg:px-8 lg:py-11'>
                     <div className = 'flex-shrink-0 flex items-center'>
                         <div className = 'flex flex-col w-6l h-6l bg-gray-100 dark:bg-coolGray-800 rounded-8'>  
-                            <div className = 'flex-grow overflow-y-auto'>
-                                <div className = 'fixed backdrop-filter backdrop-blur-lg bg-opacity-70 dark:bg-opacity-80 w-55l ml-1 px-4 lg:py-3 bg-gray-100 dark:bg-coolGray-800 rounded-8'>
+                            <div className = 'overflow-y-auto'>
+                                <div className = 'fixed backdrop-filter backdrop-blur-lg bg-opacity-70 dark:bg-opacity-80 w-6l px-4 py-3 right-12.5 bg-gray-100 dark:bg-coolGray-800 rounded-8'>
                                     <h1 className = 'text-lg font-semibold text-black dark:text-white'>
                                         Kitűzött hírdetések
                                     </h1>
@@ -115,16 +115,5 @@ const RightHeader = () => {
         </>
     );
 };
-
-/*
-
-Erről egy szót se, jó? ><
-~ Sanyi
-
-<div className = 'space-y-2 py-1 text-gray-500 dark:text-gray-400 font-normal text-xs'>
-    <p>OMEGA Magyarország Kft. © 2021.</p>
-    <p>Minden jog fenntartva.</p>
-</div>
-*/
 
 export default RightHeader;
