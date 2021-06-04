@@ -1,9 +1,9 @@
 <h1 align="left">
-	🎉 <b>tale</b>
+	🦋 <b>tale</b>
 </h1>
 
 <p align="left">
-	Egy új közösségi háló, ahol megvásárolhatod álmaid cipőjét, biztonságosabban és gyorsabban!
+	Egy új közösségi háló, ahol megvásárolhatod álmaid cipőjét, biztonságosabban és gyorsabban! 🤩
 </p>
 
 <h1 align="left">
@@ -36,7 +36,7 @@
 </h1>
 
 <p align="left">
-  	Minden itt látható dolog, OMEGA Magyarország Kft. tulajdona. <br>
+  	Minden itt látható dolog, <b>OMEGA Magyarország Kft.<b> tulajdona. <br>
 	Bármi részlet, legyen az kód vagy kép, eltulajdonítása jogi
 	következményeket von maga után.
 </p>
