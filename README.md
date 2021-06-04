@@ -14,7 +14,8 @@
 | :------------------- | :-------------------: |
 | [scripts](scripts)   |   TypeORM (Backend)   |
 | [kibbeh](kibbeh)     |   Next.js (Frontend)  |
-| [baklava](baklava)   |   Electron Desktop    |
+| [baklava](baklava)   |   Electron (Desktop)    |
+| [pilaf](pilaf)       |   React Native (Mobile)|
 
 <h1 align="left">
 	📋 Dokumentáció
