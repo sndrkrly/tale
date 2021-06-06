@@ -1,10 +1,10 @@
 <h1 align="left">
-	<img src="https://i.imgur.com/GBOgfkc.png"/>
+	<img src="https://i.imgur.com/GBOgfkc.png" width="24" height="24"/>
 	<b>tale</b>
 </h1>
 
 <p align="left">
-	Egy új közösségi háló, ahol megvásárolhatod álmaid cipőjét, biztonságosabban és gyorsabban! 🤩
+	Egy új közösségi háló, ahol megvásárolhatod álmaid cipőjét, <br> biztonságosabban és gyorsabban! 🤩
 </p>
 
 <h1 align="left">
