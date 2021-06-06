@@ -1,5 +1,6 @@
 <h1 align="left">
-	🦋 <b>tale</b>
+	<img src="https://i.imgur.com/GBOgfkc.png"/>
+	<b>tale</b>
 </h1>
 
 <p align="left">
