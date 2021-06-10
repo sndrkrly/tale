@@ -95,9 +95,15 @@ const RightHeader = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </main>
+        </>
+    );
+};
 
-                    
-                    <div className = 'lg:py-5 mt-5 px-1 flex-shrink-0 flex items-center'>
+/*
+
+<div className = 'lg:py-5 mt-5 px-1 flex-shrink-0 flex items-center'>
                         <div className = 'w-55l ml-1 px-4 lg:py-3'>
                             <p className = 'text-black dark:text-white font-normal text-xs'>
                                 Adatvédelmi irányelvek · Szolgáltatási feltételek ·
@@ -110,10 +116,7 @@ const RightHeader = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
-        </>
-    );
-};
+                    
+*/
 
 export default RightHeader;
