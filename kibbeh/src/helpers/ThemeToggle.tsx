@@ -8,24 +8,22 @@
 import Next from 'next';
 
 import { useTheme } from 'next-themes';
-import { HiMoon, HiSun } from 'react-icons/hi';
+import { FaToggleOn, FaToggleOff } from 'react-icons/fa';
 
 export const Toggle = () => {
     const { theme, setTheme } = useTheme()
 
     return (
-        <div className = 'bg-gray-100 hover:bg-gray-200 dark:bg-coolGray-800 dark:hover:bg-coolGray-700 transition duration-500 ease-in-out rounded-8 p-2'>
+        <>
             {theme === 'dark' ? (
-                <HiSun
-                    onClick = {() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                    className = 'text-gray-500 dark:text-gray-400 text-2xl cursor-pointer'
-                />
+                <p>
+                    <FaToggleOn onClick = {() => setTheme(theme === 'dark' ? 'light' : 'dark')} className = 'text-gray-500 dark:text-gray-400 text-2xl cursor-pointer' />                
+                </p>
             ) : (
-                <HiMoon
-                    onClick = {() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                    className = 'text-gray-500 dark:text-gray-400 text-2xl cursor-pointer'
-                />
+                <p>
+                    <FaToggleOff onClick = {() => setTheme(theme === 'dark' ? 'light' : 'dark')} className = 'text-gray-500 dark:text-gray-400 text-2xl cursor-pointer' />
+                </p>
             )}
-        </div>
+        </>
     );
 }
