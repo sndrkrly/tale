@@ -49,13 +49,14 @@
 
 
 <p align="left">
-	<b>Hogyan tudok egy meglévő projecthez hozzájárulni?</b>  <br>
+	<b>Hogyan tudok egy meglévő projecthez hozzájárulni?</b>  <br><br>
 	Cloneold le az adott repot a gépedre. <br>
 	Módosítsd a fájlokat, adj hozzá, törölj, stb. <br>
 	Addold a fájlokat a stagingbe a git add . paranccsal.<br>
 	Commitold a változásokat a `git commit -m "Üzenet"` paranccsal, ahol az üzenet a módosítást írja le. <br>
 	Told fel a változásokat a `git push origin <branch>` paranccsal. A `branch` helyére értelemszerűen a branch kerül, a fő `branch` mindig a `master`.
-	Ha nem engedi, mert a változatod nem passzol a fentlévővel, akkor frissítsd le a local repodat az alábbi paranccsal: `git pull --rebase`
-	Ha elakarod dobni a módosításaidat, akkor használd a `git checkout parancsot`, a harmadik paraméter értelemszerűen a fájlnév, minden fájl esetén ..
+	<br><br>
+	Ha nem engedi, mert a változatod nem passzol a fentlévővel, akkor frissítsd le a local repodat az alábbi paranccsal: `git pull --rebase` <br>
+	Ha elakarod dobni a módosításaidat, akkor használd a `git checkout parancsot`, a harmadik paraméter értelemszerűen a fájlnév, minden fájl esetén .. <br>
 	Ha le akarod kérni hogy mik a módosítások, mi van a stagingben, illetve mi nincs, használd a `git status * parancsot`
 </p>
