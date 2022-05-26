@@ -8,7 +8,7 @@
 </p>
 
 <h1 align="left">
-	✨ Struktúra
+	✨ Structure
 </h1>
 
 | Codebase             |        Description         |
