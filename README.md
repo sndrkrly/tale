@@ -4,16 +4,16 @@
 </h1>
 
 <p align="left">
-	Egy új közösségi háló, ahol megvásárolhatod álmaid cipőjét, <br> biztonságosabban és gyorsabban! 🤩
+	🦋 A new social network where you can buy the shoes of your dreams, safer and faster!
 </p>
 
 <h1 align="left">
 	✨ Struktúra
 </h1>
 
-| Kódbázis             |        Leírás         |
+| Codebase             |        Description         |
 | :------------------- | :-------------------: |
 | [scripts](scripts)   |   TypeORM (Backend)   |
 | [kibbeh](kibbeh)     |   Next.js (Frontend)  |
-| [baklava](baklava)   |   Electron (Desktop) [Terv]    |
-| [pilaf](pilaf)       |   React Native (Mobile) [Terv]|
+| [baklava](baklava)   |   Electron (Desktop) [Idea]    |
+| [pilaf](pilaf)       |   React Native (Mobile) [Idea]|
