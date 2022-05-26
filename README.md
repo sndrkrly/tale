@@ -34,16 +34,6 @@
 </p>
 
 <h1 align="left">
-	🔖 Jogi információk
-</h1>
-
-<p align="left">
-  	Minden itt látható dolog, <b>Aries Magyarország Kft.</b> tulajdona. <br>
-	Bármi részlet, legyen az kód vagy kép, eltulajdonítása jogi
-	következményeket von maga után.
-</p>
-
-<h1 align="left">
 	🫂 Quickstart (fejlesztőknek)
 </h1>
 
